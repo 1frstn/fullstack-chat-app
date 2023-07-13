@@ -19,9 +19,10 @@ export default function Chat() {
            style={{height:"100vh"}}
            renderChatHeader={(chat) => <Header chat={chat} />}
            renderMessageForm={(props) => {
-            <StandardMessageForm props={props} activeChat={chatProps.chat} />
+            return <StandardMessageForm props={props} activeChat={chatProps.chat} />
            }}
         />
+        
     </div>
   )
 }
